@@ -20,4 +20,4 @@
 
 ##4.生成4个txt文件指定训练集、验证集、数据集、训练验证集 
 
-调用generateTXT.py文件，输入xmlresult文件夹，输出到ImageSets/Main文件夹中
+调用generateTXT.py文件，输入xmlresult文件夹，输出到/ImageSets/Main文件夹中
