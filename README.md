@@ -4,7 +4,7 @@
 
 文件结构如下：其中红框中的是原始的文件夹，其余4个文件夹是在执行过程中生成的
 
-![](/Users/chenguanghao/Desktop/结构.png)
+![](./static/structure.png)
 
 ## 1. Seq文件转化成JEPG图像文件
 
@@ -20,4 +20,4 @@
 
 ##4.生成4个txt文件指定训练集、验证集、数据集、训练验证集 
 
-调用generateTXT.py文件，输入xmlresult文件夹，输出到/ImageSets/Main文件夹中
+调用generateTXT.py文件，输入xmlresult文件夹，输出到ImageSets/Main文件夹中
