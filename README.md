@@ -18,6 +18,9 @@
 
 调用rename_jpg.py文件，输入JPEG文件夹，输出到JPEGImages文件夹中
 
-##4.生成4个txt文件指定训练集、验证集、数据集、训练验证集 
+## 4.生成4个txt文件指定训练集、验证集、数据集、训练验证集 
 
 调用generateTXT.py文件，输入xmlresult文件夹，输出到ImageSets/Main文件夹中
+
+**IMPORTANT NOTES**
+I found there're some errors in the vbb files. To be specific, some bounding boxes are out of the image such as the xmax is greater than the width of the image, which will cause big mistakes in training faster R-CNN. Therefore, you can mannually check the wrong xml files during training. Or I will try to correct the wrong bnd boxes later automatically.
