@@ -8,7 +8,7 @@
 
 调用vbb2voc.py文件，输入annotations文件夹，输出到xmlresult文件夹中。
 
-##3.将所有的xml文件一集JPEG文件分别放到两个统一的文件夹里
+## 3.将所有的xml文件一集JPEG文件分别放到两个统一的文件夹里
 
 调用mergeimg.py和mergexml.py文件。
 
