@@ -39,8 +39,8 @@ def open_save(file,savepath):
             i.close()              
         count = count + 1 
 if __name__=="__main__":  
-    rootdir = "/Users/chenguanghao/Desktop/Caltech/data"  
-    saveroot = "/Users/chenguanghao/Desktop/Caltech/JPEG"
+    rootdir = "/home/user2/chen_guang_hao/PeDetect/smallcorgi/Faster-RCNN_TF-master/data/VOCdevkit2007/Caltech"  
+    saveroot = "/home/user2/chen_guang_hao/PeDetect/smallcorgi/Faster-RCNN_TF-master/data/VOCdevkit2007/Caltech/JPEG"
 
     for parent, dirnames, filenames in os.walk(rootdir):  
         for filename in filenames:                    

@@ -110,7 +110,7 @@ def instance2xml_base(anno, bbox_type='xyxy'):
     return anno_tree
 
 
-def parse_anno_file(vbb_inputdir, seq_inputdir, vbb_outputdir, seq_outputdir):
+def parse_anno_file(vbb_inputdir,vbb_outputdir):
     # annotation sub-directories in hda annotation input directory
     assert os.path.exists(vbb_inputdir)
     sub_dirs = os.listdir(vbb_inputdir)     #对应set00,set01...
@@ -158,9 +158,9 @@ def visualize_bbox(xml_file, img_file):
 
 
 def main():
-    vbb_inputdir = "/Users/chenguanghao/Desktop/Caltech/annotations"    
-    vbb_outputdir = "/Users/chenguanghao/Desktop/Caltech/xmlresult/"
-    parse_anno_file(vbb_inputdir, seq_inputdir, vbb_outputdir, seq_outputdir)
+    vbb_inputdir = "/home/user2/chen_guang_hao/PeDetect/smallcorgi/Faster-RCNN_TF-master/data/VOCdevkit2007/Caltech/data/annotations/"
+    vbb_outputdir = "/home/user2/chen_guang_hao/PeDetect/smallcorgi/Faster-RCNN_TF-master/data/VOCdevkit2007/Caltech/Annotations/"
+    parse_anno_file(vbb_inputdir,vbb_outputdir)
     
 
     """

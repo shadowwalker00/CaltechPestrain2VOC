@@ -3,16 +3,14 @@ import os
 import random
 import time
 
-xmlfilepath='/Users/chenguanghao/Desktop/Caltech/xmlresult'    #xml文件的路径
-saveBasePath='/Users/chenguanghao/Desktop/Caltech/ImageSets/Main'           #txt 文件的存储路径
+xmlfilepath='/home/user2/chen_guang_hao/PeDetect/smallcorgi/Faster-RCNN_TF-master/data/VOCdevkit2007/Caltech/Annotations'
+saveBasePath='/home/user2/chen_guang_hao/PeDetect/smallcorgi/Faster-RCNN_TF-master/data/VOCdevkit2007/Caltech/ImageSets/Main'
 if not os.path.exists(saveBasePath):
     os.makedirs(saveBasePath)
 #设置训练集和测试集的百分比
-trainval_percent=0.8
-train_percent=0.85
+trainval_percent=0.5
+train_percent=0.5
 total_xml = os.listdir(xmlfilepath)
-
-
 
 num = len(total_xml)      #xml文件的数量
 index_list = range(num)   #生成一个index列表
